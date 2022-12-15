@@ -1,0 +1,20 @@
+Q1	:	How do you obtain the currently executing task handle?
+A1	:	Doormiddel van the functie xtaskgetcurrenttahandle().
+Q2	:	How do you give up the CPU to another task?
+A2	:	Doormiddel van taskyield().
+Q3	:	Which CPU core do application programs execute on for the ESP32?
+A3	:	Dat is afhankelijk van welke ESP je hebt voor een single core is het CPU 0, maar in mijn geval, voor een dual core is dat CPU 1.
+Q4	:	What is the name of the default task provided by the Arduino environment?
+A4	:	De looptask
+Q5	:	What FreeRTOS function is used to suspend one task?
+A5	:	Functie vtasksuspend().
+Q6	:	Can a task delete itself and if so how?
+A6	:	Ja een taak kan zichzelf verwijderen, doormiddel van vtaskdelete.
+Q7	:	When is the task's stack released when a task deletes itself? Immediately or later during the IDLE task?
+A7	:	Niet gelijk, pas wanneer de idle taak het verzoek kan verwerken.
+Q8	:	What causes the preemption in FreeRTOS for ESP32?
+A8	:	de preemption vindt plaats met de systeemtikonderbreking.	
+Q9	:	How often do the ESP32 tick interrupts?
+A9	:	De tikonderbreking vind om de 1 milliseconde plaats.
+
+		
